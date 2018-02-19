@@ -1,13 +1,8 @@
 <h3>Chuck Norris</h3>
 
-
-<ul>
-	
-		<p>tell another</p>
-		
-		{{chuc}}
-	
-</ul>
-
+<h1><button {{action "getJoke" joke}}> Learn about Chuck </button></h1>
+{{#if gotJoke}}
+	This is your joke: <b>{{joke}}</b>
+{{/if}}
 
 {{yield}}
