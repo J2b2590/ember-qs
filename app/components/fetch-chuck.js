@@ -1,8 +1,5 @@
 import Component from '@ember/component';
 
-
-
-
 export default Component.extend({
 	
 	gotJoke: false,
@@ -18,6 +15,7 @@ export default Component.extend({
 					that.setProperties({
 						joke: response.value,
 						gotJoke: true
+						
 					});
 
 				},
@@ -26,6 +24,7 @@ export default Component.extend({
 				}
 			});
 		}
+
 	}
 
 });

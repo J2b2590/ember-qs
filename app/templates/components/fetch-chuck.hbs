@@ -1,8 +1,11 @@
 <h3>Chuck Norris</h3>
 
-<h1><button {{action "getJoke" joke}}> Learn about Chuck </button></h1>
+<h1><button {{action "getJoke"}}> Learn about Chuck </button></h1>
 {{#if gotJoke}}
-	This is your joke: <b>{{joke}}</b>
+	<b>{{joke}}</b>
 {{/if}}
+
+<a href="http://localhost:4200/rock" {{action "logClick" preventDefault=false}}>Go</a>
+
 
 {{yield}}
