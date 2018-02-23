@@ -1,11 +1,13 @@
 <h3>Chuck Norris</h3>
 
+<a href="http://localhost:4200/rock" {{action "logClick" preventDefault=false}}>Go</a>
+
+
 <h1><button {{action "getJoke"}}> Learn about Chuck </button></h1>
 {{#if gotJoke}}
 	<b>{{joke}}</b>
 {{/if}}
 
-<a href="http://localhost:4200/rock" {{action "logClick" preventDefault=false}}>Go</a>
 
 
 {{yield}}
