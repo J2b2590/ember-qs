@@ -3,9 +3,9 @@
 <a href="http://localhost:4200/rock" {{action "logClick" preventDefault=false}}>Go</a>
 
 
-<h1 class= 'cool' ><button {{action "getJoke"}}> Learn about Chuck </button></h1>
+<h1><button {{action "getJoke"}}> Learn about Chuck </button></h1>
 {{#if gotJoke}}
-	<b >{{joke}}</b>
+	<h2 class='joke'>{{joke}}</h2>
 {{/if}}
 
 
